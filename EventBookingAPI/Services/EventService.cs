@@ -211,6 +211,7 @@ namespace EventBookingAPI.Services
             _context.Events.Update(existingEvent);
             await _context.SaveChangesAsync();
         }
+        #region try another way
 
         //public async Task UpdateEventAsync(int id, CreateEventRequest request)
         //{
@@ -230,7 +231,8 @@ namespace EventBookingAPI.Services
 
         //    _context.Events.Update(existingEvent);
         //    await _context.SaveChangesAsync();
-        //}
+        //} 
+        #endregion
 
         public async Task DeleteEventAsync(int id)
         {
